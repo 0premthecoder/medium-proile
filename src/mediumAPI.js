@@ -1,8 +1,7 @@
 const Parser = require('rss-parser');
 const parser = new Parser();
 
-const userArticles = async () => {
-  let username = "coderyoboy";
+const userArticles = async (username) => {
   const imageRegex = /<img[^>]+src="?([^"\s]+)"?\s*\/>/g;
 
   const feed = await parser.parseURL(`https://medium.com/feed/@${username}`);
