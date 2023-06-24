@@ -1,0 +1,25 @@
+{
+  "name": "github-readme-medium",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --trace-warnings index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omidnikrah/github-readme-medium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omidnikrah/github-readme-medium/issues"
+  },
+  "homepage": "https://github.com/omidnikrah/github-readme-medium#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "rss-parser": "^3.9.0",
+    "sharp": "^0.29.3"
+  }
+}
