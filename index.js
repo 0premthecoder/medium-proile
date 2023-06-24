@@ -6,12 +6,12 @@ const { asyncForEach } = require('./src/utils');
 
 http.createServer(async (req, res) => {
   const reqURL = url.parse(req.url, true);
-  const { username, limit, bg, text } = reqURL.query;
+  const { limit, bg, text } = reqURL.query;
   const colors = { bg: bg, text: text }
   const timestamp = Math.floor(Date.now() / 1000);
   let articles = [];
 
-
+  let username = "coderyoboy"
   if (!username) {
     res.write(JSON.stringify({ error: 'Add your medium username as query string' }));
     res.end();
